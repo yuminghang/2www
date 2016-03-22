@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/goBackLinearLayout"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/bg_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:text="推送消息"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_big" />
+        <com.delin.dgclient.view.SwitchButton
+            android:id="@+id/switchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right|center"/>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="@dimen/text_size_big"
+        android:textColor="@color/text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="设置定位精度"/>
+    <com.delin.dgclient.view.WheelView
+        android:id="@+id/main_wv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center" />
+</LinearLayout>

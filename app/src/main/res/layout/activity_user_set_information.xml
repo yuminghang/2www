@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/goBackLinearLayout"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/bg_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="账号设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_big" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c8c7cc"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/headPicLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="#535353"/>
+
+            <com.delin.dgclient.view.CustomImageView
+                android:id="@+id/baiLinImageView"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/touxiang_tupian_03"
+                android:scaleType="fitXY"
+                android:background="@drawable/user_set_headpic_layer">
+            </com.delin.dgclient.view.CustomImageView>
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/arrow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c8c7cc"
+            android:layout_marginLeft="15dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/nickNameLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="昵称"
+                android:textColor="#535353"/>
+
+            <TextView
+                android:id="@+id/niceNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Pamela"
+                android:textColor="@color/text_color"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/arrow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c8c7cc"
+            android:layout_marginLeft="15dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/sexLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="性别"
+                android:textColor="#535353"/>
+
+            <TextView
+                android:id="@+id/sexTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="女"
+                android:textColor="@color/text_color"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/arrow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#c8c7cc"
+            android:layout_marginLeft="15dp"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/nameLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="姓名"
+                android:textColor="#535353"/>
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="闫百玲"
+                android:textColor="@color/text_color"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c8c7cc"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c8c7cc"
+        android:layout_marginTop="45dp"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/passwordLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="密码管理"
+            android:layout_marginLeft="15dp"
+            android:textColor="#535353"/>
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/arrow"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c8c7cc"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/itemLinearLayout">
+    <LinearLayout
+        android:layout_width="9dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="9dp" 
+            android:background="@mipmap/yuandian_20"/>
+        <LinearLayout
+            android:id="@+id/lineLinearLayout"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"></LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/parkingPrivilegeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当日消费每满100元可换取1小时免费停车券最多可换3小时停车券,限当日有效"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/text_color_1"
+        android:layout_marginBottom="39dp"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/childTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:text="商场会员卡"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_normal1"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/btn_forward_normal"
+                android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lineLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c7c6c7"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>

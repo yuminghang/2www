@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="151dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:src="@mipmap/shop_logo"
+            android:layout_margin="15dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/storeNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SPRING FIELD"
+                android:textSize="@dimen/text_size_big" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="left">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="快时尚"
+                    android:textColor="@color/text_color"/>
+                <ImageView
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="9dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/location_icon"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1F/4001"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/text_color"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"></LinearLayout>
+    <LinearLayout
+        android:id="@+id/shopMenuLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/shopDetailLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/shop_detail"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="商户详情"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line"></LinearLayout>
+        <LinearLayout
+            android:id="@+id/gotoThereLinearLayout"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/go_to_there"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="到这去"
+                android:layout_marginLeft="15dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

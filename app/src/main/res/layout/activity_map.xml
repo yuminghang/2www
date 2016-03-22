@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/actionFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:background="@mipmap/jiantou_03"
+            android:layout_gravity="left"
+            android:layout_margin="15dp"/>
+        <Button
+            android:id="@+id/ruleButton"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:background="@mipmap/wenhao_05"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"/>
+    </FrameLayout>
+    <com.fengmap.android.map.FMMapView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </com.fengmap.android.map.FMMapView>
+    <LinearLayout
+        android:id="@+id/ratingLinearLayout"
+        android:layout_width="163dp"
+        android:layout_height="51dp"
+        android:background="@mipmap/biankunag_03"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        >
+        <TextView
+            android:id="@+id/stepSizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+        <RatingBar
+            android:id="@+id/baoziRatingBar"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp" />
+    </LinearLayout>
+</FrameLayout>

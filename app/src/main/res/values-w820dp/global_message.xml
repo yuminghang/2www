@@ -1,0 +1,5 @@
+<resources>
+    <string name="global_message_remote_server_error">网络连接异常，请稍后重试</string>
+    <string name="global_message_remote_app_error">程序出错</string>
+    <string name="global_message_unknown_error">未知错误</string>
+</resources>

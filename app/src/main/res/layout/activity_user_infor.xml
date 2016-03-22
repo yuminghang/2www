@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/goBackLinearLayout"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center|left"
+                android:background="@mipmap/bg_back"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/text_size_big"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="个人中心"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+
+    <ExpandableListView
+        android:id="@+id/userExpandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        android:divider="@null"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="45dp">
+    </ExpandableListView>
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="275dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="15dp"
+        android:background="@mipmap/bg_login_button"
+        android:layout_gravity="bottom|center"
+        android:text="退出登录"
+        android:textColor="@color/white">
+
+    </Button>
+</FrameLayout>

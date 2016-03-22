@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="coupons_radio_button" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/selector_coupons</item>
+    </style>
+    <style name="Dialog" parent="android:Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="roomRatingBar" parent="@android:style/Widget.Holo.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_layrer</item>
+        <item name="android:minHeight">23dp</item>
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:numStars">2</item>
+        <item name="android:rating">0.0</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="customCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/selector_checkbox</item>
+    </style>
+    <style name="MyDialogStyleBottom">
+
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+
+    </style>
+</resources>

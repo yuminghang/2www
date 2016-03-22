@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape>
+            <corners
+                android:bottomLeftRadius="180dp"
+                android:bottomRightRadius="180dp"
+                android:topLeftRadius="180dp"
+                android:topRightRadius="180dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/purple"></stroke>
+            <padding android:top="2dp"
+                android:left="2dp"
+                android:right="2dp"
+                android:bottom="2dp">
+            </padding>
+        </shape>
+
+    </item>
+</layer-list>

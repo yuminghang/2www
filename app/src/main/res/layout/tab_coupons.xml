@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/couponsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:footerDividersEnabled="false"
+        android:visibility="gone">
+    </ListView>
+    <TextView
+        android:id="@+id/noCouponsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="您暂时没有可用的优惠券"/>
+</LinearLayout>

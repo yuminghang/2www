@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/purple"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/goBackLinearLayout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="23dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/bg_back" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="优惠券详情"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big" />
+</FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@mipmap/coupons_bg">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="17dp"
+            android:background="@mipmap/coupons_image1" />
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="77dp"
+            android:layout_marginTop="21dp"
+            android:background="@mipmap/coupons_image" />
+
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="71dp"
+            android:background="@mipmap/coupons_image2" />
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="131dp"
+            android:background="@mipmap/coupons_image3" />
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="93dp"
+            android:background="@mipmap/coupons_image4" />
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/shop_log_bg" />
+
+        <TextView
+            android:id="@+id/storeNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="51dp"
+            android:gravity="center"
+            android:text="逸东商城"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:paddingLeft="15dp"
+            android:text="春季新品发布 惠不可挡"
+            android:textSize="@dimen/text_size_big" />
+
+        <TextView
+            android:id="@+id/summaryTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:text="2016春季新品发布"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/stopping_layer"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/detailImageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@mipmap/yuanjiaojuxing08_09"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="15dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="使用范围："
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_small"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="满100立减50，特价商品除外"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_small"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="15dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="活动时间："
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_small"/>
+            <TextView
+                android:id="@+id/startTimeTextView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="2015-11-1 06：00 至 2015-11-11 00：00"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_small"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="15dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="活动地点："
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_small"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="龙湖长楹天街"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_small"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
